@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+/* Importing Patterns */
+/* @import url(''); */
+
+/* You can add global styles to this file, and also import other style files */
+.container {
+  width: 90% !important;
+  min-width: 320px !important;
+  max-width: 1240px !important;
+}
+
+:root {
+  /* Green colors */
+  --grn-1: #285307;
+  --grn-2: #2c5b08;
+  --grn-3: #4a7c1e;
+  --grn-4: #49571a;
+  /* Baige colors */
+  --bge-1: #f5d2a2;
+  --bge-2: #f5d9a8;
+  --bge-3: #f5e0ae;
+  --bge-4: #f5efba;
+  /* Brown colors */
+  --brn-1: #2f1b00;
+  --brn-2: #3c270b;
+  --brn-3: #483215;
+  /* Radius options */
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --radius-20: 20px;
+  --radius-25: 25px;
+  /* Border Options */
+  --border-grn-1: 1px solid var(--grn-1);
+  --border-grn-2: 2px solid var(--grn-1);
+  --border-bge-1: 1px solid var(--bge-1);
+  --border-bge-2: 2px solid var(--bge-1);
+  --border-brn-1: 1px solid var(--brn-1);
+  --border-brn-2: 2px solid var(--brn-1);
+  /* Transitions */
+  --transition-1: all 0.25s ease-in-out;
+  --transition-2: all 0.5s ease-in-out;
+}

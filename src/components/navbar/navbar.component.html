@@ -1,0 +1,69 @@
+<div class="nav">
+  <div class="container">
+    <div class="row nav-cont">
+      <div class="col-9 col-lg-3 justify-content-start nav-logo">
+        <h2 class="text-center"><a routerLink="/">RoboFarm</a></h2>
+      </div>
+      <div class="col-lg-9 d-none d-lg-flex row">
+        <div class="col-10 nav-links">
+          <ul class="">
+            <li><a routerLink="">Services</a></li>
+            <li><a routerLink="">Consultants</a></li>
+            <li><a routerLink="">Agr-Info</a></li>
+            <li><a routerLink="/about">About Us</a></li>
+            <li><a routerLink="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-2 nav-sign">
+          <a class="bi bi-person-fill-add" routerLink="/signin"></a>
+        </div>
+      </div>
+      <div class="col-3 d-flex d-lg-none justify-content-end">
+        <div class="nav-menu">
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasNav"
+            role="button"
+            aria-controls="offcanvasNav"
+            class="bi bi-list fs-1"
+          ></a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNav"
+            aria-labelledby="offcanvasNavLabel"
+          >
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavLabel">RoboFarm</h1>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="">
+                <li><a routerLink="">Services</a></li>
+                <li><a routerLink="">Consultants</a></li>
+                <li><a routerLink="">Agr-Info</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="">Contact Us</a></li>
+                <hr />
+                <li>
+                  <a routerLink=""
+                    >Sign In &nbsp;<i class="bi bi-person-fill-add"></i
+                  ></a>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-holder"></div>
+<div class="test"></div>
