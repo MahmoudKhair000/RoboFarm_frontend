@@ -52,7 +52,7 @@
   text-decoration: none;
   color: var(--grn-1);
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 7px;
   /* border: 1px solid var(--grn-1); */
   border-radius: var(--radius-5);
   transition: all 0.3s ease-in-out;

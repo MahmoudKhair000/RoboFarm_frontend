@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--bge-4);
+  font-family: "Philosopher";
+  border-top: var(--border-grn-2);
+}
+.footer .col-11 {
+  min-height: 300px;
+  padding: 25px;
+  color: var(--grn-1);
+  border: var(--border-grn-1);
+}
+.footer .col-11 ul {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  /* padding: 0; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+.footer .col-11 ul li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer .col-11 ul li a {
+  /* width: 100%; */
+  text-decoration: none;
+  color: var(--grn-1);
+  font-size: 24px;
+  padding: 6px 8px;
+  /* border: 1px solid var(--grn-1); */
+  border-radius: var(--radius-5);
+  transition: all 0.3s ease-in-out;
+}
+.footer .col-11 ul li a:hover {
+  color: var(--bge-4);
+  background-color: var(--grn-1);
+}
+
+.footer .footnote {
+  height: 100px;
+  background-color: var(--grn-1);
+  color: var(--bge-4);
+}
+.footer .footnote h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.footer .footnote i {
+  font-size: 72px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
