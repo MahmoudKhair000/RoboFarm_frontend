@@ -1,0 +1,10 @@
+.sign {
+  background-color: var(--bge-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign input {
+  /* display: block; */
+}
+

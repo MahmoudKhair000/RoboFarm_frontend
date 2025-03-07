@@ -4,38 +4,97 @@
   border-top: var(--border-grn-2);
 }
 .footer .col-11 {
-  min-height: 300px;
-  padding: 25px;
+  height: fit-content;
+  padding: 0 25px 20px 25px;
   color: var(--grn-1);
-  border: var(--border-grn-1);
+  /* border: var(--border-grn-1); */
 }
-.footer .col-11 ul {
-  /* width: 100%; */
-  /* margin: 0 auto; */
-  /* padding: 0; */
+.footer .col-11 h1 {
+  font-size: 48px;
+}
+.footer .rel-links ul {
+  width: 100%;
+  padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 25px;
 }
-.footer .col-11 ul li {
+.footer .rel-links ul li {
+  width: 45%;
   text-align: center;
   margin-bottom: 10px;
 }
-.footer .col-11 ul li a {
-  /* width: 100%; */
+.footer .rel-links ul li a {
+  width: 100%;
+  display: block;
   text-decoration: none;
   color: var(--grn-1);
-  font-size: 24px;
+  font-size: 28px;
   padding: 6px 8px;
-  /* border: 1px solid var(--grn-1); */
   border-radius: var(--radius-5);
   transition: all 0.3s ease-in-out;
 }
-.footer .col-11 ul li a:hover {
+.footer .rel-links ul li a:hover {
+  color: var(--bge-4);
+  background-color: var(--grn-1);
+}
+@media (max-width: 500px) {
+  .footer .col-11 h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .footer .col-11 ul {
+    align-items: center;
+  }
+  .footer .rel-links ul {
+    flex-direction: column;
+  }
+  .footer .rel-links ul li {
+    display: block;
+    width: 80%;
+  }
+}
+.footer .sm-links ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+.footer .sm-links ul li {
+  color: var(--grn-1);
+}
+.footer .sm-links ul li a {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  text-decoration: none;
+  color: var(--grn-1);
+  font-size: 48px;
+  padding: 15px 15px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+}
+.bi-facebook {
+  border-radius: var(--radius-circle);
+}
+.bi-instagram {
+  border-radius: var(--radius-25);
+}
+.bi-linkedin {
+  border-radius: 7.5px;
+}
+.bi-youtube {
+  border-radius: var(--radius-10);
+  /* padding: 5px 5px !important; */
+}
+.footer .sm-links ul li a::before {
+  scale: 1.3;
+  object-position: center;
+}
+.footer .sm-links ul li a:hover {
   color: var(--bge-4);
   background-color: var(--grn-1);
 }

@@ -29,6 +29,7 @@
   --radius-10: 10px;
   --radius-20: 20px;
   --radius-25: 25px;
+  --radius-circle: 50%;
   /* Border Options */
   --border-grn-1: 1px solid var(--grn-1);
   --border-grn-2: 2px solid var(--grn-1);
