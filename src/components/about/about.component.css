@@ -1,0 +1,38 @@
+.carousel-inner{
+  width: 80%;
+  margin: 0 auto;
+}
+.mem-box{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--radius-10);
+}
+.mem-img{
+  width: 50%;
+  min-height: 500px ;
+}
+.mem-img img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  /* overflow: hidden; */
+}
+.mem-info{
+  /* text-align: center; */
+  margin: auto 0;
+  padding: 0 30px;
+}
+.mem-info h1{
+  margin-bottom: 10px;
+}
+.mem-info h3{
+  margin-bottom: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: var(--grn-1);
+  opacity: 1;
+  padding: 30px;
+  border-radius:var(--radius-20);
+}
