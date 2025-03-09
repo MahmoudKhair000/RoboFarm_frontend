@@ -7,7 +7,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-usersign',
-  imports: [NavbarComponent,FooterComponent, CommonModule],
+  imports: [NavbarComponent, FooterComponent, CommonModule],
   templateUrl: './usersign.component.html',
   styleUrl: './usersign.component.css'
 })
