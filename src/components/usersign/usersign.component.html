@@ -1,17 +1,29 @@
 <app-navbar></app-navbar>
 <p>usersign works!</p>
-<div class="sign signin-form">
-  <form action="">
-    <div><label for="email">Email</label><input type="email" id="email" /></div>
-    <div>
-      <input type="password" name="" id="password" />
+<div class="sign container">
+  <form class="signin-form py-5" (submit)="(null)" action="">
+    <div class="row">
+      <div class="col-md-4">
+        <p for="password">Email</p>
+      </div>
+      <div class="col-md-8">
+        <input type="email" name="email" id="email" />
+      </div>
     </div>
-    <div>
-      <input type="submit" value="Log In" />
+    <div class="row">
+      <div class="col-md-4">
+        <p for="password">Password</p>
+      </div>
+      <div class="col-md-8">
+        <input type="password" name="password" id="password" />
+      </div>
+    </div>
+    <div class="row">
+      <input class="btn w-50 m-auto" type="submit" value="Log In" />
     </div>
   </form>
 </div>
-<div class="sign signup-form">
-  <form action=""></form>
+<div class="signup-form">
+  <form></form>
 </div>
 <app-footer></app-footer>

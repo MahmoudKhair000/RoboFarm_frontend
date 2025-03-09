@@ -1,38 +1,116 @@
-.carousel-inner{
+.carousel-inner {
   width: 80%;
   margin: 0 auto;
+  font-family: "Philosopher";
+  color: var(--grn-1);
 }
-.mem-box{
-  /* border: 2px solid black; */
+.mem-box {
+  border: 2px solid var(--grn-1);
+  border-radius: var(--radius-10);
+  background-color: var(--bge-4);
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  border-radius: var(--radius-10);
+  overflow: hidden;
+  margin-bottom: 75px;
 }
-.mem-img{
-  width: 50%;
-  min-height: 500px ;
+.mem-img {
+  width: 40%;
+  padding: 0;
+  margin: 0;
 }
-.mem-img img{
-  width: 100%;
+.mem-img img {
   object-fit: cover;
-  object-position: center;
-
-  /* overflow: hidden; */
+  height: 100%;
 }
-.mem-info{
-  /* text-align: center; */
+.mem-info {
+  width: 60%;
   margin: auto 0;
-  padding: 0 30px;
+  padding: 0 5vh;
 }
-.mem-info h1{
-  margin-bottom: 10px;
+.mem-info p {
+  margin: 0;
 }
-.mem-info h3{
-  margin-bottom: 10px;
+.mem-name {
+  font-size: 3.2vw;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.mem-job,
+.mem-role {
+  font-size: 2.7vw;
+}
+.mem-about {
+  font-size: 2vw;
+}
+.mem-about i {
+  text-decoration: solid underline #28530755;
+}
+.mem-about span {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1.25vw;
+  position: relative;
+  top: 5px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   background-color: var(--grn-1);
-  opacity: 1;
+  opacity: 0.8;
   padding: 30px;
-  border-radius:var(--radius-20);
+  border-radius: var(--radius-20);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--grn-1);
+  width: 40px;
+  height: 40px;
+  margin: auto 5px;
+  border-radius: 50%;
+  border-top: none;
+  border-bottom: none;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90% !important;
+  }
+  .sm-members {
+    padding-top: 80px;
+  }
+  .mem-box {
+    flex-direction: column;
+  }
+  .mem-img {
+    width: 100%;
+    object-position: center;
+  }
+  .mem-info {
+    width: 100%;
+    padding: 5vw;
+  }
+  .mem-name {
+    font-size: 8vw;
+  }
+  .mem-job,
+  .mem-role {
+    font-size: 6vw;
+  }
+  .mem-about {
+    font-size: 5vw;
+  }
+  .carousel-indicators [data-bs-target] {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: var(--grn-1);
+    opacity: 0.8;
+    padding: 6vw;
+    border-radius: 6vw;
+  }
+}
+@media (max-width: 424px) {
+  .container {
+    width: 95% !important;
+  }
 }
