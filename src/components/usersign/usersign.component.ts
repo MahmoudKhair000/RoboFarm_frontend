@@ -3,6 +3,7 @@ import { NavbarComponent } from "../navbar/navbar.component";
 import { FooterComponent } from '../footer/footer.component';
 import { NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { bootstrapApplication } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-usersign',

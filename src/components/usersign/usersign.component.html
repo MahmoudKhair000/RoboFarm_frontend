@@ -1,13 +1,19 @@
 <app-navbar></app-navbar>
-<p>usersign works!</p>
 <div class="sign container">
-  <form class="signin-form py-5" (submit)="(null)" action="">
+  <form class="needs-validation signin-form my-5" (submit)="(null)" action="" novalidate>
     <div class="row">
       <div class="col-md-4">
         <p for="password">Email</p>
       </div>
       <div class="col-md-8">
-        <input type="email" name="email" id="email" />
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input
+          type="email"
+          class="form-control"
+          id="validationCustom01"
+          value="Mark"
+          required
+        />
       </div>
     </div>
     <div class="row">
@@ -15,11 +21,11 @@
         <p for="password">Password</p>
       </div>
       <div class="col-md-8">
-        <input type="password" name="password" id="password" />
+        <input type="password" name="password" id="password" required />
       </div>
     </div>
     <div class="row">
-      <input class="btn w-50 m-auto" type="submit" value="Log In" />
+      <button class="btn w-50 m-auto" type="submit" value="" >Log In</button>
     </div>
   </form>
 </div>
