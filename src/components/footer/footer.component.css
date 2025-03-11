@@ -71,11 +71,14 @@
   border-radius: 7.5px;
 }
 .bi-youtube {
-  border-radius: var(--radius-10);
-  /* padding: 5px 5px !important; */
+  border-radius: var(--radius-20);
+  padding: 8px 16px !important;
+}
+.bi-youtube::before {
+  transform: translateY(1px);
 }
 .footer .sm-links ul li a::before {
-  scale: 1.3;
+  scale: 1.25;
   object-position: center;
 }
 .footer .sm-links ul li a:hover {

@@ -1,44 +1,46 @@
 .sign {
-  background-color: var(--bge-4);
+  font-family: "Philosopher";
+  /* background-color: var(--bge-4); */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Philosopher";
 }
-.sign p {
+.sign label {
   margin: 0;
   font-size: 24px;
 }
 .sign input {
   color: var(--grn-1) !important;
-  width: 100%;
-  max-width: 100%;
-  height: 40px;
   font-size: 20px;
 }
-.sign input:required {
-  border: 1px solid #ff0707;
-  border-radius: 10px;
-}
-.sign {
-  width: 70%;
-}
 .sign form {
-  color: var(--bge-4);
-  background-color: var(--grn-1);
-  border-radius: var(--radius-10);
-  padding: 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: var(--grn-1) 0 0 10px 10px;
-}
-.signin-form .row,
-.signup-form .row {
-  margin: 25px 0 !important;
-  align-items: center;
-}
-.signin-form .btn,
-.signup-form .btn {
   color: var(--grn-1);
   background-color: var(--bge-4);
+  border-radius: var(--radius-10);
+  padding: 25px;
+  backdrop-filter: blur(5px);
+  box-shadow: var(--grn-1) 0 0 15px 15px;
+}
+.link-div {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-div a {
+  text-transform: capitalize;
+  color: var(--grn-1);
+}
+[type="submit"] {
+  color: var(--bge-4);
+  background-color: var(--grn-1);
   padding-block: 10px;
+  border: var(--border-grn-1);
+  font-size: 20px;
+  transition: var(--transition-1);
+}
+[type="submit"]:hover {
+  color: var(--grn-1);
+  background-color: var(--bge-4);
 }

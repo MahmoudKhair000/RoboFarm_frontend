@@ -1,111 +1,170 @@
 <app-navbar></app-navbar>
-<div class="sign container d-none">
-  <form class="needs-validation signin-form my-5" novalidate>
-    <div class="row">
-      <div class="col-md-4">
-        <p for="password">Email</p>
-      </div>
-      <div class="col-md-8">
+<div class="sign bg-leaf py-5">
+  <div class="container row px-0 py-5">
+    <form
+      id="signIn"
+      class="needs-validation mx-auto signin-form col-11 col-md-10 col-lg-8 col-xl-6"
+      (ngSubmit)="signIn(signInForm)"
+      #signInForm="ngForm"
+      novalidate
+    >
+      <!-- Email Field -->
+      <div class="mb-2">
+        <label for="email" class="form-label">Email</label>
         <input
+          id="email"
           type="email"
           class="form-control"
-          id="validationCustom01"
-          value="Mark"
+          name="email"
+          ngModel
           required
+          email
+          #emailRef="ngModel"
+          [class.is-invalid]="emailRef.invalid && emailRef.touched"
+          [class.is-valid]="emailRef.valid"
         />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <p for="password">Password</p>
-      </div>
-      <div class="col-md-8">
-        <input type="password" id="password" required />
-      </div>
-    </div>
-    <div class="row">
-      <button class="btn w-50 m-auto" type="submit">Log In</button>
-    </div>
-  </form>
-</div>
-<div class="signup-form d-none">
-  <form></form>
-</div>
-<br />
-<br />
-<div class="container p-5">
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4 position-relative">
-      <label for="validationTooltip01" class="form-label">First name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="validationTooltip01"
-        value="Mark"
-        required
-      />
-      <div class="valid-tooltip">Looks good!</div>
-    </div>
-    <div class="col-md-4 position-relative">
-      <label for="validationTooltip02" class="form-label">Last name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="validationTooltip02"
-        value="Otto"
-        required
-      />
-      <div class="valid-tooltip">Looks good!</div>
-    </div>
-    <div class="col-md-4 position-relative">
-      <label for="validationTooltipUsername" class="form-label">Username</label>
-      <div class="input-group has-validation">
-        <span class="input-group-text" id="validationTooltipUsernamePrepend"
-          >&#64;</span
+        <div
+          *ngIf="emailRef.invalid && emailRef.touched"
+          class="invalid-feedback"
         >
+          Please enter a valid email.
+        </div>
+        <div *ngIf="emailRef.valid" class="valid-feedback">Valid email.</div>
+      </div>
+      <!-- Password Field -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
         <input
-          type="text"
+          id="password"
+          type="password"
           class="form-control"
-          id="validationTooltipUsername"
-          aria-describedby="validationTooltipUsernamePrepend"
+          name="password"
+          ngModel
           required
+          minlength="6"
+          #passwordRef="ngModel"
+          [class.is-invalid]="passwordRef.invalid && passwordRef.touched"
+          [class.is-valid]="passwordRef.valid"
         />
-        <div class="invalid-tooltip">
-          Please choose a unique and valid username.
+        <div
+          *ngIf="passwordRef.invalid && passwordRef.touched"
+          class="invalid-feedback"
+        >
+          Password must be at least 6 characters.
+        </div>
+        <div *ngIf="passwordRef.valid" class="valid-feedback">
+          Valid password.
         </div>
       </div>
-    </div>
-    <div class="col-md-6 position-relative">
-      <label for="validationTooltip03" class="form-label">City</label>
-      <input
-        type="text"
-        class="form-control"
-        id="validationTooltip03"
-        required
-      />
-      <div class="invalid-tooltip">Please provide a valid city.</div>
-    </div>
-    <div class="col-md-3 position-relative">
-      <label for="validationTooltip04" class="form-label">State</label>
-      <select class="form-select" id="validationTooltip04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div class="invalid-tooltip">Please select a valid state.</div>
-    </div>
-    <div class="col-md-3 position-relative">
-      <label for="validationTooltip05" class="form-label">Zip</label>
-      <input
-        type="text"
-        class="form-control"
-        id="validationTooltip05"
-        required
-      />
-      <div class="invalid-tooltip">Please provide a valid zip.</div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
+      <!-- Submit button -->
+      <div class="mt-4">
+        <div class="row">
+          <button
+            type="submit"
+            class="btn mx-auto col-5 col-sm-4 col-md-5 col-lg-6"
+          >
+            Submit
+          </button>
+          <div class="link-div col-12 col-sm-7 col-md-6 col-lg-5">
+            <a class="my-4 mx-auto" routerLink="/sign" (click)="goSingUp()">
+              Create A New Account
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form
+      id="signUp"
+      class="needs-validation mx-auto signupform d-none col-11 col-md-10 col-lg-8 col-xl-6"
+      (ngSubmit)="signUp(signUpForm)"
+      #signUpForm="ngForm"
+      novalidate
+    >
+      <!-- Name Field -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          id="newName"
+          type="text"
+          class="form-control"
+          name="newName"
+          ngModel
+          required
+          minlength="3"
+          #nameRef="ngModel"
+          [class.is-invalid]="nameRef.invalid && nameRef.touched"
+          [class.is-valid]="nameRef.valid && nameRef.touched"
+        />
+        <div
+          *ngIf="nameRef.invalid && nameRef.touched"
+          class="invalid-feedback"
+        >
+          Name is required (min 3 chars).
+        </div>
+        <div *ngIf="nameRef.valid" class="valid-feedback">Valid Name.</div>
+      </div>
+      <!-- Email Field -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          id="newEmail"
+          type="email"
+          class="form-control"
+          name="newEmail"
+          ngModel
+          required
+          email
+          #newemailRef="ngModel"
+          [class.is-invalid]="newemailRef.invalid && newemailRef.touched"
+          [class.is-valid]="newemailRef.valid"
+        />
+        <div
+          *ngIf="newemailRef.invalid && newemailRef.touched"
+          class="invalid-feedback"
+        >
+          Please enter a valid email.
+        </div>
+        <div *ngIf="newemailRef.valid" class="valid-feedback">Valid email.</div>
+      </div>
+      <!-- Password Field -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          id="newPassword"
+          type="password"
+          class="form-control"
+          name="newPassword"
+          ngModel
+          required
+          minlength="6"
+          #newpasswordRef="ngModel"
+          [class.is-invalid]="newpasswordRef.invalid && newpasswordRef.touched"
+          [class.is-valid]="newpasswordRef.valid"
+        />
+        <div
+          *ngIf="newpasswordRef.invalid && newpasswordRef.touched"
+          class="invalid-feedback"
+        >
+          Password must be at least 6 characters.
+        </div>
+        <div *ngIf="newpasswordRef.valid" class="valid-feedback">
+          Valid password.
+        </div>
+      </div>
+      <!-- Submit button -->
+      <div class="mt-4">
+        <div class="row">
+          <button type="submit" class="btn mx-auto col-5 col-sm-4 col-md-5">
+            Submit
+          </button>
+          <div class="link-div col-12 col-sm-7 col-md-6">
+            <a class="my-4 mx-auto" routerLink="/sign" (click)="goSingIn()">
+              Already have an account? Sign In
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 <app-footer></app-footer>
