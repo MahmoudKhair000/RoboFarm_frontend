@@ -4,6 +4,8 @@ import { AboutComponent } from '../components/about/about.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { ServicesComponent } from '../components/services/services.component';
 import { UsersignComponent } from '../components/usersign/usersign.component';
+import { ConsultantsComponent } from '../components/consultants/consultants.component';
+import { AgrinfoComponent } from '../components/agrinfo/agrinfo.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +18,16 @@ export const routes: Routes = [
         path: "services",
         component: ServicesComponent,
     },
+    {
+      title: "Consultants",
+      path: "consultants",
+      component: ConsultantsComponent,
+  },
+  {
+    title: "Agr-Info",
+    path: "agrinfo",
+    component: AgrinfoComponent,
+},
 /*
     {
         title: "About",
