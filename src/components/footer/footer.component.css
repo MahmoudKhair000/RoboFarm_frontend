@@ -19,12 +19,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .footer .rel-links ul li {
-  width: 45%;
+  width: 48%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .footer .rel-links ul li a {
   width: 100%;
@@ -40,12 +40,25 @@
   color: var(--bge-4);
   background-color: var(--grn-1);
 }
+
+.footer .location > div {
+  height: 300px;
+  border: var(--border-grn-1);
+  padding: 7.5px;
+  border-radius: 10px;
+}
+.footer .location iframe {
+  border-radius: 5px;
+}
+
 .footer .sm-links ul {
+  list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
-  list-style: none;
+  gap: 10px;
 }
 .footer .sm-links ul li {
   color: var(--grn-1);
@@ -56,8 +69,8 @@
   display: block;
   text-decoration: none;
   color: var(--grn-1);
-  font-size: 48px;
-  padding: 15px 15px;
+  font-size: 40px;
+  padding: 10px 10px;
   transition: all 0.3s ease-in-out;
   display: flex;
 }
@@ -65,14 +78,14 @@
   border-radius: var(--radius-circle);
 }
 .bi-instagram {
-  border-radius: var(--radius-25);
+  border-radius: 15px;
 }
 .bi-linkedin {
-  border-radius: 7.5px;
+  border-radius: 5px;
 }
 .bi-youtube {
-  border-radius: var(--radius-20);
-  padding: 8px 16px !important;
+  border-radius: 12px;
+  padding: 4px 10px !important;
 }
 .bi-youtube::before {
   transform: translateY(1px);
@@ -102,6 +115,11 @@
   align-items: center;
 }
 
+@media (max-width: 1199px) {
+  .footer .sm-links ul {
+    flex-direction: row;
+  }
+}
 @media (max-width: 500px) {
   .footer .col-11 h1 {
     font-size: 40px;
