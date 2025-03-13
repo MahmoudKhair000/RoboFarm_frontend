@@ -7,19 +7,19 @@
   height: fit-content;
   padding: 0 25px 20px 25px;
   color: var(--grn-1);
-  /* border: var(--border-grn-1); */
 }
 .footer .col-11 h1 {
-  font-size: 48px;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 .footer .rel-links ul {
   width: 100%;
   padding: 0;
+  margin-top: 50px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
 }
 .footer .rel-links ul li {
   width: 48%;
@@ -42,7 +42,7 @@
 }
 
 .footer .location > div {
-  height: 300px;
+  height: 270px;
   border: var(--border-grn-1);
   padding: 7.5px;
   border-radius: 10px;
@@ -100,22 +100,46 @@
 }
 
 .footer .footnote {
-  height: 100px;
   background-color: var(--grn-1);
+}
+.footer .footnote .container > div {
+  align-items: center;
+  height: 80px;
   color: var(--bge-4);
+  flex: 0 0 auto;
 }
 .footer .footnote h3 {
   font-size: 36px;
-  margin: 0;
+  margin: 0 !important;
+}
+.footer .footnote .container .d-lg-flex {
+  justify-content: space-between;
+}
+.footer .footnote .container .d-lg-flex i {
+  position: absolute;
+  left: calc(50% - 25px);
+}
+.footer .footnote .container > .d-lg-none {
+  justify-content: space-evenly;
 }
 .footer .footnote i {
-  font-size: 72px;
-  margin: 0;
+  width: 66px;
+  padding: 1px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: var(--bge-4);
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.footer .footnote i img {
+  width: 100%;
 }
 
 @media (max-width: 1199px) {
+  .footer .location > div {
+    height: 440px;
+  }
   .footer .sm-links ul {
     flex-direction: row;
   }
