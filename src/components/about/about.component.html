@@ -1,39 +1,144 @@
 <app-navbar></app-navbar>
-<div
-  class="carousel slide carousel-fade my-5 d-none d-md-block"
-  id="carouselExampleCaptions"
-  data-bs-ride="true"
->
-  <div class="carousel-indicators">
+<div class="bg-diamond py-5">
+  <div
+    class="carousel slide carousel-fade mx-auto d-none d-md-block"
+    id="carouselExampleCaptions"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+    </div>
+    <div class="carousel-inner mx-auto">
+      <div class="carousel-item active">
+        <div class="mem-box">
+          <div class="mem-img">
+            <img
+              src="./assets/images/mem1.jpg"
+              alt="member1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="mem-info">
+            <p class="mem-name mt-2 mb-3">Mahmoud Al-Seyyid Ahmed</p>
+            <p class="mem-job mb-2">Agricultural Engineer</p>
+            <p class="mem-role my-0">MEAN Stack Developer</p>
+            <p class="mem-about mt-3 mb-4">
+              A 21 year old Agricultural Engineering student attending Aswan
+              University.<br />And a MEAN Stack Web developer with over 6 years
+              of experience with responsive website designs,
+              <i>"a developer from the float age"</i><span> MK</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="mem-box">
+          <div class="mem-img">
+            <img
+              src="./assets/images/mem2.jpg"
+              alt="member2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="mem-info">
+            <p class="mem-name mt-2 mb-3">Mostafa Abdel-Naeam Ismail</p>
+            <p class="mem-job mb-2">Agricultural Engineer</p>
+            <p class="mem-role my-0">MEAN Stack Developer</p>
+            <p class="mem-about mt-3 mb-4">
+              A 21 year old Agricultural Engineering student attending Aswan
+              University.<br />And a MEAN Stack Web developer with 2 years of
+              experience with responsive website designs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="mem-box">
+          <div class="mem-img">
+            <img
+              src="./assets/images/mem1.jpg"
+              alt="member3"
+              class="img-fluid"
+            />
+          </div>
+          <div class="mem-info">
+            <p class="mem-name mt-2 mb-3">Member 3</p>
+            <p class="mem-job mb-2">Agricultural Engineer</p>
+            <p class="mem-about mt-3 mb-4">
+              A 21 year old Agricultural Engineering student attending Aswan
+              University.<br />And a MEAN Stack Web developer with 2 years of
+              experience with responsive website designs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="mem-box">
+          <div class="mem-img">
+            <img
+              src="./assets/images/mem2.jpg"
+              alt="member4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="mem-info">
+            <p class="mem-name mt-2 mb-3">Member 4</p>
+            <p class="mem-job mb-2">Agricultural Engineer</p>
+            <p class="mem-about mt-3 mb-4">
+              A 21 year old Agricultural Engineering student attending Aswan
+              University.<br />And a MEAN Stack Web developer with 2 years of
+              experience with responsive website designs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <button
+      class="carousel-control-prev"
       type="button"
       data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
     <button
+      class="carousel-control-next"
       type="button"
       data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="3"
-      aria-label="Slide 4"
-    ></button>
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <div class="carousel-inner mx-auto">
-    <div class="carousel-item active">
+  <div class="sm-members d-md-none">
+    <div class="container">
       <div class="mem-box">
         <div class="mem-img">
           <img src="./assets/images/mem1.jpg" alt="member1" class="img-fluid" />
@@ -50,8 +155,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
       <div class="mem-box">
         <div class="mem-img">
           <img src="./assets/images/mem2.jpg" alt="member2" class="img-fluid" />
@@ -67,8 +170,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
       <div class="mem-box">
         <div class="mem-img">
           <img src="./assets/images/mem1.jpg" alt="member3" class="img-fluid" />
@@ -83,8 +184,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="carousel-item">
       <div class="mem-box">
         <div class="mem-img">
           <img src="./assets/images/mem2.jpg" alt="member4" class="img-fluid" />
@@ -98,87 +197,6 @@
             experience with responsive website designs.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<div class="sm-members d-md-none">
-  <div class="container">
-    <div class="mem-box">
-      <div class="mem-img">
-        <img src="./assets/images/mem1.jpg" alt="member1" class="img-fluid" />
-      </div>
-      <div class="mem-info">
-        <p class="mem-name mt-2 mb-3">Mahmoud Al-Seyyid Ahmed</p>
-        <p class="mem-job mb-2">Agricultural Engineer</p>
-        <p class="mem-role my-0">MEAN Stack Developer</p>
-        <p class="mem-about mt-3 mb-4">
-          A 21 year old Agricultural Engineering student attending Aswan
-          University.<br />And a MEAN Stack Web developer with over 6 years of
-          experience with responsive website designs,
-          <i>"a developer from the float age"</i><span> MK</span>
-        </p>
-      </div>
-    </div>
-    <div class="mem-box">
-      <div class="mem-img">
-        <img src="./assets/images/mem2.jpg" alt="member2" class="img-fluid" />
-      </div>
-      <div class="mem-info">
-        <p class="mem-name mt-2 mb-3">Mostafa Abdel-Naeam Ismail</p>
-        <p class="mem-job mb-2">Agricultural Engineer</p>
-        <p class="mem-role my-0">MEAN Stack Developer</p>
-        <p class="mem-about mt-3 mb-4">
-          A 21 year old Agricultural Engineering student attending Aswan
-          University.<br />And a MEAN Stack Web developer with 2 years of
-          experience with responsive website designs.
-        </p>
-      </div>
-    </div>
-    <div class="mem-box">
-      <div class="mem-img">
-        <img src="./assets/images/mem1.jpg" alt="member3" class="img-fluid" />
-      </div>
-      <div class="mem-info">
-        <p class="mem-name mt-2 mb-3">Member 3</p>
-        <p class="mem-job mb-2">Agricultural Engineer</p>
-        <p class="mem-about mt-3 mb-4">
-          A 21 year old Agricultural Engineering student attending Aswan
-          University.<br />And a MEAN Stack Web developer with 2 years of
-          experience with responsive website designs.
-        </p>
-      </div>
-    </div>
-    <div class="mem-box">
-      <div class="mem-img">
-        <img src="./assets/images/mem2.jpg" alt="member4" class="img-fluid" />
-      </div>
-      <div class="mem-info">
-        <p class="mem-name mt-2 mb-3">Member 4</p>
-        <p class="mem-job mb-2">Agricultural Engineer</p>
-        <p class="mem-about mt-3 mb-4">
-          A 21 year old Agricultural Engineering student attending Aswan
-          University.<br />And a MEAN Stack Web developer with 2 years of
-          experience with responsive website designs.
-        </p>
       </div>
     </div>
   </div>

@@ -1,3 +1,7 @@
+.carousel {
+  margin: 25px auto;
+  max-width: 1480px !important;
+}
 .carousel-inner {
   width: 80%;
   margin: 0 auto;
@@ -12,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 .mem-img {
   width: 40%;
@@ -32,14 +36,14 @@
   margin: 0;
 }
 .mem-name {
-  font-size: 3.2vw;
+  font-size: 48px;
 }
 .mem-job,
 .mem-role {
-  font-size: 2.7vw;
+  font-size: 40px;
 }
 .mem-about {
-  font-size: 2vw;
+  font-size: 28px;
 }
 .mem-about i {
   text-decoration: solid underline #28530755;
@@ -47,7 +51,7 @@
 .mem-about span {
   font-style: italic;
   text-decoration: none;
-  font-size: 1.25vw;
+  font-size: 18px;
   position: relative;
   top: 5px;
 }
