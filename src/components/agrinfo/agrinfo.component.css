@@ -1,12 +1,9 @@
-/* .sec-1{
-  width: 100vw;
-  height: 100vb;
-}
-.sec-1 h1{
+.intro-section {
+  padding: 100px 20px;
   text-align: center;
-  margin:auto 0 ;
+  border-radius: 10px;
 }
-.sec-2{
-  width: 100vw;
-  height: 100vb;
-} */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}

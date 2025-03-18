@@ -1,0 +1,10 @@
+.intro-section {
+  padding: 150px 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
