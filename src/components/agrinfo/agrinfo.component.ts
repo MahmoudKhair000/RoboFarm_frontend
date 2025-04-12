@@ -9,5 +9,11 @@ import { FooterComponent } from "../footer/footer.component";
   styleUrl: './agrinfo.component.css'
 })
 export class AgrinfoComponent {
-
+  ngOnInit() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    })
+  }
 }
