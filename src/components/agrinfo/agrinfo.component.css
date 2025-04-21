@@ -7,3 +7,8 @@
   height: 200px;
   object-fit: cover;
 }
+.card {
+  border: 2px solid var(--grn-1);
+  border-radius: var(--radius-10);
+  background-color: var(--bge-4);
+}

@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="bg-diamond py-5">
+    <div class="container my-5">
+        <div class="intro-section mb-5">
+            
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="text-align: center;">
+                        <h2 class="fw-bold">المحاصيل الزراعية</h2>
+                        <p class="lead">تعرف على أنواع المحاصيل الزراعية وطرق زراعتها</p>
+                        <p class="lead">مصر تُعد من الدول الرائدة في إنتاج المحاصيل الزراعية بفضل خصوبة أراضيها ووفرة المياه وتميز مناخها.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-4" *ngFor="let crop of crops">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img [src]="crop.image" [alt]="crop.name" class="img-fluid rounded vegetable-image">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="fw-bold">{{crop.name}}</h3>
+                                <p><strong>النوع:</strong> {{crop.type}}</p>
+                                <p><strong>الأصناف:</strong> {{crop.varieties.join('، ')}}</p>
+                                <p><strong>كيفية زراعته:</strong> {{crop.cultivation}}</p>
+                                <p><strong>موسم الزراعة:</strong> {{crop.plantingSeason}}</p>
+                                <p><strong>موسم الحصاد:</strong> {{crop.harvestSeason}}</p>
+                                <p><strong>الإنتاج السنوي:</strong> {{crop.production}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer> 

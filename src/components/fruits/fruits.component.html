@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="bg-diamond py-5">
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body" style="text-align: center;">
+                        <h2 class="fw-bold">الفواكه</h2>
+                        <p class="lead">تعرف على أنواع الفواكه المزروعة في مصر</p>
+                        <p class="lead">مصر تُعد من الدول الرائدة في إنتاج وتصدير الفواكه بفضل مناخها الملائم وتنوع أنواع الفواكه المزروعة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4" *ngFor="let fruit of fruits">
+                <div class="card shadow-sm">
+                    <img [src]="fruit.image" class="fruit-image" [alt]="fruit.name">
+                    <div class="card-body">
+                        <h3 class="fw-bold">{{fruit.name}}</h3>
+                        <p><strong>النوع:</strong> {{fruit.type}}</p>
+                        <p><strong>الأصناف:</strong> {{fruit.varieties.join('، ')}}</p>
+                        <p><strong>كيفية زراعته:</strong> {{fruit.cultivation}}</p>
+                        <p><strong>موسم الحصاد:</strong> {{fruit.harvestSeason}}</p>
+                        <p><strong>الإنتاج السنوي:</strong> {{fruit.production}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer> 
