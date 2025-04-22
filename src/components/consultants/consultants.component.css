@@ -10,7 +10,14 @@
   
 }
 .text{
-  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 15px;
+  color: var(--grn-1);
+  border: var(--border-grn-1);
+  background-color: #f5efba88;
+  width: fit-content;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 .card {

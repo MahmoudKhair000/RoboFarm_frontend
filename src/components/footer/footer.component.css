@@ -101,6 +101,7 @@
 
 .footer .footnote {
   background-color: var(--grn-1);
+  overflow: hidden;
 }
 .footer .footnote .container > div {
   align-items: center;
@@ -119,7 +120,7 @@
   position: absolute;
   left: calc(50% - 25px);
 }
-.footer .footnote .container > .d-lg-none {
+.footer .footnote .container .d-lg-none {
   justify-content: space-evenly;
 }
 .footer .footnote i {
@@ -161,5 +162,8 @@
   }
   .footer .sm-links ul li a {
     font-size: 10vw;
+  }
+  .footer .footnote h3 {
+    width: min-content;
   }
 }
