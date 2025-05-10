@@ -79,3 +79,17 @@
 .test-sec {
   height: 500px;
 }
+
+.img-preview {
+  object-fit: fill;
+  width: 100%;
+}
+.reviews {
+  background-color: var(--grn-1);
+}
+.reviews h1 {
+  color: antiquewhite;
+  text-align: center;
+  width: 100%;
+  padding-top: 25px;
+}
